@@ -14,8 +14,10 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Libre Caslon Display', serif;
+        html {
+            text-align: center;
+            min-height: 100%;
+            max-width: auto;
             background: linear-gradient(90deg, #DE6262 0%, #FFB88C 100%) no-repeat;
             background: linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
             background: -moz-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
@@ -24,7 +26,15 @@
             background: -webkit-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
             background: -o-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
             background: linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
-            min-height: 100vh;
+            background-size: cover;
+        }
+
+
+        body {
+            font-family: 'Libre Caslon Display', serif;
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 0px;
             display: flex;
             align-items: center;
             justify-content: center;
