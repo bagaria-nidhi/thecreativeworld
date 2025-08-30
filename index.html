@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,14 @@
 
         body {
             font-family: 'Libre Caslon Display', serif;
-            background: linear-gradient(90deg, #DE6262 0%, #FFB88C 100%);
+            background: linear-gradient(90deg, #DE6262 0%, #FFB88C 100%) no-repeat;
+            background: linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
+            background: -moz-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
+            background: -ms-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
+            background: -webkit-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
+            background: -webkit-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
+            background: -o-linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
+            background: linear-gradient(to top right, #DE6262 0%, #FFB88C 100%) no-repeat;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -33,12 +41,19 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-10px);
             }
+
             60% {
                 transform: translateY(-5px);
             }
@@ -109,9 +124,19 @@
         }
 
         @keyframes wiggle {
-            0%, 100% { transform: rotate(0deg); }
-            25% { transform: rotate(5deg); }
-            75% { transform: rotate(-5deg); }
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(5deg);
+            }
+
+            75% {
+                transform: rotate(-5deg);
+            }
         }
 
         .social-section {
@@ -156,12 +181,12 @@
 
         .instagram {
             background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            border-radius:50%;
+            border-radius: 50%;
         }
 
         .facebook {
             background: #1877f2;
-            border-radius:50%;
+            border-radius: 50%;
         }
 
         .floating-elements {
@@ -180,10 +205,29 @@
             animation: float 6s ease-in-out infinite;
         }
 
-        .floating-emoji:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
-        .floating-emoji:nth-child(2) { top: 20%; right: 10%; animation-delay: 1s; }
-        .floating-emoji:nth-child(3) { bottom: 20%; left: 15%; animation-delay: 2s; }
-        .floating-emoji:nth-child(4) { bottom: 10%; right: 20%; animation-delay: 3s; }
+        .floating-emoji:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-emoji:nth-child(2) {
+            top: 20%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .floating-emoji:nth-child(3) {
+            bottom: 20%;
+            left: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-emoji:nth-child(4) {
+            bottom: 10%;
+            right: 20%;
+            animation-delay: 3s;
+        }
 
         .bubble {
             position: absolute;
@@ -192,128 +236,155 @@
             animation: bubbleFloat 8s ease-in-out infinite;
         }
 
-        .bubble:nth-child(5) { 
-            width: 60px; 
-            height: 60px; 
-            top: 15%; 
-            left: 5%; 
-            animation-delay: 0s; 
+        .bubble:nth-child(5) {
+            width: 60px;
+            height: 60px;
+            top: 15%;
+            left: 5%;
+            animation-delay: 0s;
         }
-        .bubble:nth-child(6) { 
-            width: 40px; 
-            height: 40px; 
-            top: 25%; 
-            right: 8%; 
-            animation-delay: 1.5s; 
+
+        .bubble:nth-child(6) {
+            width: 40px;
+            height: 40px;
+            top: 25%;
+            right: 8%;
+            animation-delay: 1.5s;
         }
-        .bubble:nth-child(7) { 
-            width: 80px; 
-            height: 80px; 
-            bottom: 30%; 
-            left: 8%; 
-            animation-delay: 3s; 
+
+        .bubble:nth-child(7) {
+            width: 80px;
+            height: 80px;
+            bottom: 30%;
+            left: 8%;
+            animation-delay: 3s;
         }
-        .bubble:nth-child(8) { 
-            width: 35px; 
-            height: 35px; 
-            bottom: 15%; 
-            right: 12%; 
-            animation-delay: 4.5s; 
+
+        .bubble:nth-child(8) {
+            width: 35px;
+            height: 35px;
+            bottom: 15%;
+            right: 12%;
+            animation-delay: 4.5s;
         }
-        .bubble:nth-child(9) { 
-            width: 55px; 
-            height: 55px; 
-            top: 40%; 
-            left: 85%; 
-            animation-delay: 2s; 
+
+        .bubble:nth-child(9) {
+            width: 55px;
+            height: 55px;
+            top: 40%;
+            left: 85%;
+            animation-delay: 2s;
         }
-        .bubble:nth-child(10) { 
-            width: 45px; 
-            height: 45px; 
-            top: 60%; 
-            left: 3%; 
-            animation-delay: 6s; 
+
+        .bubble:nth-child(10) {
+            width: 45px;
+            height: 45px;
+            top: 60%;
+            left: 3%;
+            animation-delay: 6s;
         }
-        .bubble:nth-child(11) { 
-            width: 30px; 
-            height: 30px; 
-            top: 8%; 
-            left: 50%; 
-            animation-delay: 1s; 
+
+        .bubble:nth-child(11) {
+            width: 30px;
+            height: 30px;
+            top: 8%;
+            left: 50%;
+            animation-delay: 1s;
         }
-        .bubble:nth-child(12) { 
-            width: 65px; 
-            height: 65px; 
-            top: 70%; 
-            right: 25%; 
-            animation-delay: 3.5s; 
+
+        .bubble:nth-child(12) {
+            width: 65px;
+            height: 65px;
+            top: 70%;
+            right: 25%;
+            animation-delay: 3.5s;
         }
-        .bubble:nth-child(13) { 
-            width: 25px; 
-            height: 25px; 
-            bottom: 40%; 
-            right: 5%; 
-            animation-delay: 5s; 
+
+        .bubble:nth-child(13) {
+            width: 25px;
+            height: 25px;
+            bottom: 40%;
+            right: 5%;
+            animation-delay: 5s;
         }
-        .bubble:nth-child(14) { 
-            width: 50px; 
-            height: 50px; 
-            top: 35%; 
-            left: 20%; 
-            animation-delay: 7s; 
+
+        .bubble:nth-child(14) {
+            width: 50px;
+            height: 50px;
+            top: 35%;
+            left: 20%;
+            animation-delay: 7s;
         }
-        .bubble:nth-child(15) { 
-            width: 38px; 
-            height: 38px; 
-            bottom: 8%; 
-            left: 40%; 
-            animation-delay: 2.5s; 
+
+        .bubble:nth-child(15) {
+            width: 38px;
+            height: 38px;
+            bottom: 8%;
+            left: 40%;
+            animation-delay: 2.5s;
         }
 
         @keyframes bubbleFloat {
-            0%, 100% { 
+
+            0%,
+            100% {
                 transform: translateY(0px) scale(1);
                 opacity: 0.3;
             }
-            50% { 
+
+            50% {
                 transform: translateY(-30px) scale(1.1);
                 opacity: 0.6;
             }
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         @media (max-width: 600px) {
-            .hey { 
-                font-size: 3rem; 
+            .hey {
+                font-size: 3rem;
             }
-            .happy { 
-                font-size: 1.6rem; 
+
+            .happy {
+                font-size: 1.6rem;
             }
-            .message { 
-                font-size: 1.1rem; 
+
+            .message {
+                font-size: 1.1rem;
             }
+
             .social-title {
                 font-size: 1.1rem;
             }
-            .social-links { 
-                flex-direction: row; 
-                gap: 15px; 
+
+            .social-links {
+                flex-direction: row;
+                gap: 15px;
             }
-            .kids-images { 
-                gap: 10px; 
+
+            .kids-images {
+                gap: 10px;
             }
-            .kid-avatar { 
-                width: 60px; 
-                height: 60px; 
-                font-size: 1.5rem; 
+
+            .kid-avatar {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="floating-elements">
         <div class="floating-emoji">🎈</div>
@@ -332,48 +403,51 @@
         <div class="bubble"></div>
         <div class="bubble"></div>
     </div>
-    
+
     <div class="container">
         <img src="./icn.png" height="300px" width="300px"></img>
         <h1>
             <div class="hey">Hey! 👋</div>
             <div class="happy">Happy to see you here!</div>
         </h1>
-        
+
         <div class="kids-images">
             <div class="kid-avatar">👧</div>
             <div class="kid-avatar">👦</div>
             <div class="kid-avatar">🧒</div>
         </div>
-        
+
         <div class="message">
             We're currently upgrading our website to make it even more awesome for you!
         </div>
-        
+
 
         <div class="social-section">
             <div class="social-title">
                 Till then, you can connect with us on social media!
             </div>
-            
-             <div class="social-links">
-                <a href="https://www.instagram.com/the.creativeworldofficial?igsh=MTJucTBkazNvcGF3cQ==" class="social-link instagram">
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/the.creativeworldofficial?igsh=MTJucTBkazNvcGF3cQ=="
+                    class="social-link instagram">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                     </svg>
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100057330135202" class="social-link facebook">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                     </svg>
                 </a>
             </div>
         </div>
     </div>
-    
+
     <script>
         // Add some interactive sparkles on click
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             const sparkle = document.createElement('div');
             sparkle.style.position = 'fixed';
             sparkle.style.left = e.clientX + 'px';
@@ -382,14 +456,14 @@
             sparkle.style.pointerEvents = 'none';
             sparkle.style.animation = 'sparkle 1s ease-out forwards';
             sparkle.textContent = '✨';
-            
+
             document.body.appendChild(sparkle);
-            
+
             setTimeout(() => {
                 document.body.removeChild(sparkle);
             }, 1000);
         });
-        
+
         // Add sparkle animation
         const style = document.createElement('style');
         style.textContent = `
@@ -407,4 +481,5 @@
         document.head.appendChild(style);
     </script>
 </body>
+
 </html>
